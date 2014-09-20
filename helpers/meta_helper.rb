@@ -10,10 +10,6 @@ end
 def page_description
   description = site_description
 
-  if current_article && current_article.summary(100)
-    description = current_article.summary(100)
-  end
-
   description
 end
 
