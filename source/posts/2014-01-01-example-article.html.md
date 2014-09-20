@@ -3,5 +3,10 @@ title: Example Article 1
 date: 2014-01-01
 tags: example, odd
 ---
+![猫](2014-01-01-example-article/cat.jpg)
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+吾輩は猫である。名前はまだ無い。
+
+どこで生れたか頓（とん）と見當がつかぬ。何でも薄暗いじめじめした所でニヤーニヤー泣いて居た事丈は記憶して居る。吾輩はこゝで始めて人間といふものを見た。然（しか）もあとで聞くとそれは書生といふ人間中で一番獰悪（だうあく）な種族であつたさうだ。此書生といふのは時々我々を捕（つかま）へて煮て食ふといふ話である。然し其當時は何といふ考（かんがへ）もなかつたから別段恐しいとも思はなかつた。但（たゞ）彼の掌（てのひら）に載せられてスーと持ち上げられた時何だかフハフハした感じが有つた許（ばか）りである。掌の上で少し落ち付いて書生の顔を見たのが所謂（いはゆる）人間といふものゝ見始（みはじめ）であらう。此時妙なものだと思つた感じが今でも殘つて居る。第一毛を以て装飾されべき筈の顔がつるつるして丸で薬罐（やくわん）だ。其後猫にも大分逢つたがこんな片輪には一度も出會（でく）はした事がない。加之（のみならず）顔の眞中が餘りに突起して居る。そうして其穴の中から時々ぷうぷうと烟（けむり）を吹く。どうも咽（む）せぽくて實に弱つた。是が人間の飲む烟草（たばこ）といふものである事は漸く此頃（このごろ）知つた。
+
+
