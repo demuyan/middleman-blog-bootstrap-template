@@ -22,3 +22,6 @@
 # Ignore Gemfile.lock
 /Gemfile.lock
 .gitconfig
+
+# Ignore .s3_sync
+.s3_sync

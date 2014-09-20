@@ -9,6 +9,9 @@ gem "middleman-target", "~> 0.0.6"
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
 
+# For Amazon S3
+gem "middleman-s3_sync"
+
 # For Slim
 gem "slim", "~> 2.0.2"
 
