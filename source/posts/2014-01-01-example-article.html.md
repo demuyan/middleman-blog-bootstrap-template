@@ -3,7 +3,8 @@ title: Example Article 1
 date: 2014-01-01
 tags: example, odd
 ---
-![猫](2014-01-01-example-article/cat.jpg)
+
+<img class="img-responsive" src="/images/2014-01-01-example-article/cat.jpg">
 
 吾輩は猫である。名前はまだ無い。
 
