@@ -15,6 +15,7 @@
     "modernizr": "~2.6.3",
     "respond": "~1.4.2",
     "bootswatch-scss": "~3.0.0",
-    "font-awesome": "~4.0.3"
+    "font-awesome": "~4.0.3",
+    "bootstrap": "~3.0"
   }
 }
