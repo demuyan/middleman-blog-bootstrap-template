@@ -1,5 +1,14 @@
 .col-lg-3.col-md-3
   .well
+    h4 最近の記事
+    ul.list-unstyled
+      - blog.articles[0...5].each do |article|
+        li
+          = link_to article.title, article
+          span<>
+          = article.date.strftime('(%m/%d)')
+
+  .well
     h4 Tags
     ul.list-unstyled
       - blog.tags.each do |tag, articles|
@@ -17,6 +26,8 @@
           |  (
           = articles.size
           | )
+
+  
   .well
     h4 Side Widget Well
     p Bootstrap's default well for sidebar
