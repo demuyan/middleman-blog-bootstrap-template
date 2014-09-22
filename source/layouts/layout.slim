@@ -3,6 +3,7 @@ html
   head
     meta[charset="utf-8"]
     meta[http-equiv="X-UA-Compatible" content="IE=edge;chrome=1"]
+    meta[name="viewport" content="width=device-width, initial-scale=1.0"]
     title
       = page_title
     meta[name="description" content="#{page_description}"]
@@ -10,31 +11,27 @@ html
     /[if lt IE 9]
       = javascript_include_tag "ie8"
     = stylesheet_link_tag "all"
+    = javascript_include_tag  "tes"
     = partial "partials/analytics"
   body
     = partial "partials/header"
     .container
       .row
-        = partial "partials/sidebar"
-        div.col-lg-9.col-md-9
+        .col-xs-12.col-sm-6.col-md-8.col-lg-8
           - unless current_article.nil?
-            h1
+            h2
               = current_article.title
             - current_article.tags.each do |tag|
               small.label.label-default
                 = tag
-            hr
             p
               span.glyphicon.glyphicon-time
               |  Posted on 
-              = current_article.date.strftime('%b %e')
-            hr
+              = current_article.date.strftime('%y/%m/%d')
             - if current_article.data.image_src
               img.img-responsive src=current_article.data.image_src
-              hr
           = yield
-          hr
-            p.text-center
-              | 2014 
-              = link_to "#{site_title}", "/"          
-    = javascript_include_tag  "all"
+        = partial "partials/sidebar"
+    = partial "partials/footer"
+
+  = javascript_include_tag  "all"

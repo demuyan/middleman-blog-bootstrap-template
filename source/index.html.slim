@@ -3,26 +3,27 @@ pageable: true
 per_page: 5
 ---
 - page_articles.each_with_index do |article, i|
-  h1
-    = link_to article.title, article
-  p
-    - article.tags.each do |tag|
-      small.label.label-default
-        = tag
-  hr
-  p
-    span.glyphicon.glyphicon-time
-    |  Posted on 
-    = article.date.strftime('%b %e')
-  hr
-  - if article.data.image_src
-    img.img-responsive src=article.data.image_src
-    hr
-  = article.summary
-  a.btn.btn-primary href=article.url
-    | Read More
-    span.glyphicon.glyphicon-chevron-right
-  hr
+  .panel.panel-default
+    .panel-heading
+      h2
+        = link_to article.title, article
+    .panel-body
+      - if article.data.image_src
+        img.img-responsive src=article.data.image_src
+      = article.summary
+      a.btn.btn-primary href=article.url
+        | Read More
+        span.glyphicon.glyphicon-chevron-right
+    .panel-footer
+      span.post-timestamp
+        span.glyphicon.glyphicon-time
+        = article.date.strftime('%Y年%m月%d日')
+      span.post-labels
+        div.glyphicon.glyphicon-tags
+        - article.tags.each do |tag|
+          = link_to tag, tag_path(tag) 
+      
+
 - if paginate
   - if num_pages > 1
     .well-sm
