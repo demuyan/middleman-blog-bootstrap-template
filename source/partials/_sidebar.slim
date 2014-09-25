@@ -1,27 +1,42 @@
 .col-xs-6.col-lg-4.col-md-4
 
-  .well
-    h4 最新記事
-    ul.list-unstyled
-      - blog.articles[0...5].each do |article|
-        li
-          = link_to article.title + ' - ' + article.date.strftime('(%m/%d)'), article
+  .panel.panel-default
+    .panel-heading    
+      h4.panel-title 最新記事
+    .panel-body
+      ul.list-unstyled
+        - blog.articles[0...5].each do |article|
+          li
+            = link_to article.title + ' - ' + article.date.strftime('(%m/%d)'), article
 
-  .well
-    h4 Tags
-    ul.list-unstyled
-      - blog.tags.each do |tag, articles|
-        a.btn.btn-primary.btn-sm href=tag_path(tag)
-          = tag
+  .panel.panel-default
+    .panel-heading    
+      h4.panel-title Tags
+    .panel-body
+      ul.list-unstyled
+        - blog.tags.each do |tag, articles|
+          a.btn.btn-primary.btn-sm href=tag_path(tag)
+            = tag
 
-  .well
-    h4 Year
-    ol
-      - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
-        li
-          = link_to year, blog_year_path(year)
-          |  (
-          = articles.size
-          | )
+  .panel.panel-default
+    .panel-heading    
+      h4.panel-title Category
+    .panel-body
+      ul.list-unstyled
+        - blog.articles.group_by {|p| p.data["category"] }.each do |category, articles|
+          li
+            = category
+
+  .panel.panel-default
+    .panel-heading    
+      h4.panel-title Year
+    .panel-body
+      ol
+        - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
+          li
+            = link_to year, blog_year_path(year)
+            |  (
+            = articles.size
+            | )
 
 

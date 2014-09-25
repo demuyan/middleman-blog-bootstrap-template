@@ -18,18 +18,6 @@ html
     .container
       .row
         .col-xs-12.col-sm-6.col-md-8.col-lg-8
-          - unless current_article.nil?
-            h2
-              = current_article.title
-            - current_article.tags.each do |tag|
-              small.label.label-default
-                = tag
-            p
-              span.glyphicon.glyphicon-time
-              |  Posted on 
-              = current_article.date.strftime('%y/%m/%d')
-            - if current_article.data.image_src
-              img.img-responsive src=current_article.data.image_src
           = yield
         = partial "partials/sidebar"
     = partial "partials/footer"
