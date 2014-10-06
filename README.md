@@ -34,11 +34,11 @@
 1. Install the assets in the `bower_components/` directory.
 
 ```shell
-gem install middleman
-git clone https://github.com/biblichor/middleman-blog-bootstrap-template.git ~/.middleman/blog-bootstrap
-middleman init my_new_project --template=blog-bootstrap
-cd my_new_project
-bower install
+$ gem install middleman
+$ git clone https://github.com/demuyan/middleman-blog-bootstrap-template.git ~/my_blog_project
+$ cd ~/my_blog_project
+$ bundle install --path vendor/bundler
+$ bower install
 ```
 
 ##Configuration
